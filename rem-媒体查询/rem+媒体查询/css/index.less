@@ -1,0 +1,91 @@
+// 导入另一个样式文件
+@import "common";
+body {
+	min-width: 320px;
+	width: 15rem;
+	margin: 0 auto;
+	line-height: 1.5;
+	font-family: arial,helvetica;
+	background: #F2F2F2;
+}
+@baseFont:50rem;
+// 顶部搜索框
+.search-content {
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 15rem;
+	height: 88 / @baseFont;
+	background-color: #ffc001;
+	.classify {
+		width: 44 / @baseFont;
+		height: 70 / @baseFont;
+		margin: 11 / @baseFont 25 / @baseFont 7 / @baseFont 24 / @baseFont;
+		background: url(../images/classify.png) no-repeat;
+		-webkit-background-size: 44 / @baseFont 70 / @baseFont;
+		background-size: 44 / @baseFont 70 / @baseFont;
+	}
+	.search {
+		flex: 1;
+		input {
+			outline: none;
+			border: 0;
+			height: 66 / @baseFont;
+			width: 100%;
+			border-radius: 33 / @baseFont;
+			background-color: #fff2cc;
+			margin-top: 12 / @baseFont;
+			padding-left: 25 / @baseFont;
+			font-size: 25 / @baseFont;
+			color: #757575;
+		}
+	}
+	.login {
+		width: 75 / @baseFont;
+		height: 70 / @baseFont;
+		line-height: 70 / @baseFont;
+		margin: 10 / @baseFont;
+		font-size: 25 / @baseFont;
+		text-align: center;
+		color: #FFFFFF;
+	} 
+}
+.banner {
+	width: 750 / @baseFont;
+	height: 368 / @baseFont;
+	margin:0;
+	img {
+		width: 100%;
+	}
+}
+.ad {
+	display: flex;
+	a {
+		flex: 1;
+		img {
+			width: 100%;
+		}
+	}
+}
+.nav {
+	width: 750 / @baseFont;
+	a {
+		float: left;
+		width: 150 / @baseFont;
+		height: 140 / @baseFont;
+		text-align: center;
+		img {
+			display: block;
+			width: 82 / @baseFont;
+			height: 82 / @baseFont;
+			margin: 10 / @baseFont auto 0;
+		}
+		span {
+			display: block;
+			font-size: 25 / @baseFont;			
+			color: #333333;
+		}
+	}
+}
